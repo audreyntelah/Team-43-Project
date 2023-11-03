@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="HomePageCSS.css">
+	<title>Page Title</title>
+</head>
+<body>
+	<header>
+	<div  class="flex-container1" id="logo_div">
+  		<img class="logo-transition" id="logo" src="logo.png"> 
+	</div>
+	</header>
+	<nav>
+		<div class="flex-container2"  id="nav_div">		
+			<a href = "Home_Page.html" class="Link_Button"target="_blank"><button class="dropbtn">Men</button></a>
+			<a href = "Font.html" class="Link_Button" target="_blank"><button class="dropbtn" >Women</button></a>
+  			<a href = "Font.html" class="Link_Button" target="_blank"><button class="dropbtn" >Unisex</button></a>
+  			<a href = "Font.html" class="Link_Button" target="_blank"><button class="dropbtn" >Sale</button></a>
+  			<a href = "Font.html" class="Link_Button" target="_blank"><button class="dropbtn" >Gift Sets</button></a>
+  		
+  		</div>
+	</nav>
+	<article>
+		<div class="flex_slideshow">
+			<div class="slideshow_box">
+				<div class="Slide fade">
+		  			<img src=" slideshow_image_1.png">
+		  		</div>
+		  		<div class="Slide fade">
+		  			<img src="Blockchain.png">
+		  		</div>
+		<a class="previous_button" onclick="nextSlides(-1)">❮</a>
+		<a class="next_button" onclick="nextSlides(1)">❯</a>
+				
+			</div>
+		</div>
+
+		<p style="font-size: 100px;">245243542523454564254545435345435wefwfewfewfw42542</p>
+  		<p style="font-size: 100px;">245243542523454564254545435345435efwfewewfw42542</p>
+  		<p style="font-size: 100px;">245243542523454564254545435345435eewfewfw42542</p>
+		<p style="font-size: 100px;">245243542523454564254545435ewfw42542</p>
+
+	</article>
+
+	<script>
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+	    document.getElementById("logo_div").style.padding ="10px 5px";
+	    document.getElementById("nav_div").style.padding ="0px 0px";
+	    document.getElementById("logo").style.width ="0%";
+	    document.getElementById("logo").style.height ="0%";
+
+
+
+	  } else {
+	    document.getElementById("logo_div").style.padding = "50px 10px";
+	    document.getElementById("nav_div").style.padding ="1%";
+	    document.getElementById("logo").style.width ="200px";
+	    document.getElementById("logo").style.height ="200px";
+	  }
+	}
+	</script>
+	<script>
+		var slideIndex = 1;
+		S_Slide(slideIndex);
+
+		function nextSlides(n) {
+		  S_Slide(slideIndex += n);
+		}
+
+		function C_Slide(n) {
+		  S_Slide(slideIndex = n);
+		}
+
+		function S_Slide(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("Slide");
+		  
+		  if (n > slides.length) {
+		  slideIndex = 1
+		  }    
+		  if (n < 1) {
+		  slideIndex = slides.length
+		  }
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";  
+		  }
+
+		  slides[slideIndex-1].style.display = "block"; 
+		  setTimeout(showSlides, 2000); 
+		}
+
+	</script>
+
+
+</body>
+</html> 
