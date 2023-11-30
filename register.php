@@ -7,8 +7,8 @@
 try{
 	
 	#register user by inserting the user info 
-	$stat=$db->prepare("insert into users values(default,?,?,?)");
-	$stat->execute(array($username, $password, $email));
+	$stat=$db->prepare("insert into users values(default,?,?)");
+	$stat->execute(array($email, $password));
 	
 	$id=$db->lastInsertId();
 	echo "Congratulations! You are now registered. Your ID is: $id  ";  	
