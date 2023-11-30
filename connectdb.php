@@ -1,6 +1,6 @@
 <?php
 $db_host = 'localhost';
-$db_name = 'fragrancewebsite';
+$db_name = 'fragrancedb';
 $username = 'root';
 $password = '';
 
