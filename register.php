@@ -15,7 +15,7 @@
     // Validate password complexity
     if (validatePassword($password)) {
         // Password meets complexity requirements
-        // Add your code to insert the user into the database or perform other actions
+        
 		try{
 	
 			#register user by inserting the user info 
