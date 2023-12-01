@@ -3,74 +3,188 @@
     }
 
 /*//////////////////////////////////////////////////////////////////////*/
+/*Heading Styling*/
 .flex_logo_container {
+  /*Flex container for the logo*/
   display: flex;
   justify-content: center;
   background-color: rgb(4,4,4);
-  transition: 1.5s;
+  transition: 1.0s;
   padding: 10px 10px;
 }
 
 .logo_transition{
-  transition: 1.0s;
-  width: 300px;
-  height: 300px;
+   /* Logo transition effect */
+  transition: 0.5s;
+  width: 20%;
+  height: 20%;
+}
+
+.basket_button{
+   /* Styling for header buttons and icons */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+
+}
+
+.login_button{
+   /* Styling for header buttons and icons */
+  position: absolute;
+  top: 10px;
+  right: 80px;
+
+  width: 50px;
+  height: 50px;
+  
+}
+
+.header_icon {
+   /* Styling for header buttons and icons */
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 /*//////////////////////////////////////////////////////////////////////*/
+/* Left Section Styling */
 .section_left_container{
+   /* Container for the left section */
   display: flex;
   justify-content: center;
-  transition: 1.5s;
+  transition-duration: 1.0s;
   margin: 10px;
-  height: 550px;
-  background-color: darkgray;
+  height: 60vh;
+  min-width: 40vh;
+  width: auto;
+  background-color: black;
   float: left;
   width: 30%;
+  font-family: courier;
+  font-size: 110%;
+  border:none ;
+  border-style: none;
 }
-/*//////////////////////////////////////////////////////////////////////*/
 
+.section_left_container_text{
+  /* Text styling for the left section */
+  padding: 10%;
+  margin: 10vh 5vh 5vh 5vh;
+  color: white;
+  transition-duration: 1.0s;
+}
+
+.section_left_button{
+  /* Button styling for the left section */
+  width: 50vh;
+  height: 10vh;
+  padding: 5%;
+  cursor: pointer;
+  transition-duration: 1.0s;
+  background-color: black;
+  color: white;
+  border: 6px white ;
+  border-style: double;
+  font-size: 20px;
+  font-family: courier;
+
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+ /* Right Section Styling */
 .section_right_container{
+  /* Container for the right section */
   display: flex;
   justify-content: center;
-  background-color: rgb(4,4,4);
-  transition: 1.5s;
+  transition-duration: 1.0s;
   margin: 10px;
-  height: 550px;
-  background-color: darkgray;
+  height: 60vh;
+  min-width: 40vh;
+  background-color: black;
   float: right;
   width: 30%;
+  font-family: courier;
+  font-size: 110%;
+  border:none ;
+  border-style: none;
+}
+
+.section_right_container_text{
+  /* Text styling for the right section */
+  padding: 10%;
+  margin: 10vh 5vh 5vh 5vh;
+  color: white;
+  transition-duration: 1.0s;
+
+}
+.section_right_button{
+  /* Button styling for the right section */
+  width: 50vh;
+  height: 10vh;
+  padding: 5%;
+
+  cursor: pointer;
+  transition-duration: 1.0s;
+  background-color: black;
+  color: white;
+  border: 6px white ;
+  border-style: double;
+  font-size: 20px;
+  font-family: courier;
+
 }
 
 
+.fade-in-section { 
+  animation: fadeIn 5s; 
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 /*//////////////////////////////////////////////////////////////////////*/
+/* Middle Section Styling */
 .section_middle_container{
+  /* Container for the middle section */
   display: flex;
   justify-content: center;
-  background-color: rgb(4,4,4);
-  background-color: darkgray;
-  height: 100px;
-  margin: 10px;
+  background-color: darkgrey;
+  height: 8vh;
+  width: 100%;
+  margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px 10px;
 }
-/*//////////////////////////////////////////////////////////////////////*/
 
+.section_middle_container_text{
+  /* Text styling for the middle section */
+  font-size: 1.9vh;
+  color: black;
+}
+/*//////////////////////////////////////////////////////////////////////*/
+/* Navigation Styling */
 .nav_container {
+  /* Navigation container styling */
   display: flex;
   background-color: darkgray;
   justify-content: center;
   text-align: center;
   padding: 1%;
   font-size: 100%;
-  transition: 1.0s;
+
 
 }
 
 .nav_btn {
-  width: 100%;
-  height: 100%;
-  padding: 1%;
-  margin: 0.5%;
+  /* Navigation button styling */
+  width: 35vh;
+  height: 5vh;
+  
   cursor: pointer;
   transition-duration: 1.0s;
   background-color: rgb(255,255,255);
@@ -88,21 +202,26 @@
 
 }
  .Link_Button{
-  margin: 0.5%;
-  width: 100%;
+  /* Styling for links in navigation */
+  margin:0.5%;
+  padding: 0%;
+  width: 35vh;
   text-decoration: none;
 
  }
 
 /*//////////////////////////////////////////////////////////////////////*/
+/* Slideshow Styling */
 .Slide_Image{
-  width: 100%;
-  height: 100%;
+  /* Styling for the slideshow */
+  width: 75vh;
+  height: 55vh;
   padding-block: 15px;
 }
 
 
 .slideshow_box {
+  /* Styling for the slideshow */
   display: flex;
   max-width: 100%;
   position: relative;
@@ -113,6 +232,7 @@
 
 
 .Slide_number {
+  /* Styling for the slideshow */
   color: #f2f2f2;
   font-size: 12px;
   padding: 23px 27px;
@@ -123,26 +243,30 @@
 
 
 .Slide_Indicator {
-  height: 20px;
-  width: 20px;
+  /* Styling for the slideshow */
+  height: 1%;
+  width: 1%;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
-  display: inline-block;
+  display: none;
   padding: 10px;
   transition: background-color 0.6s ease;
 }
 
 .Slide_Indicator_Container {
+  /* Styling for the slideshow */
   text-align:center;
   padding:20px;
 }
 
 .active {
+  /* Slideshow indicator and fade animation styling */
   background-color: black;
 }
 
 .fade {
+  /* Slideshow indicator and fade animation styling */
   animation-name: fade;
   animation-duration: 6.5s;
 }
@@ -152,10 +276,12 @@
   to {opacity: 1}
 }
 /*//////////////////////////////////////////////////////////////////////*/
+/* Modal Styling */
 .login_modal {
+   /* Styling for login modal */
   display: flex;
   position: fixed;
-  top: 0;
+  top: 0px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -163,14 +289,18 @@
   z-index: 2;
 }
 .hidden{
+   /* Styling for login modal */
   display: none;
 }
 
 .login_modal_content_container {
+   /* Styling for login modal */
     background-color: #fff;
-    width: 25%;
-    height: 75%;
-    margin: 100px auto;
+    width: 50vh;
+    height: 70vh;
+    min-height: 600px;
+    min-width: 400px;
+    margin: 50px auto;
     padding: 20px;
     text-align: center;
     position: relative;
@@ -179,6 +309,7 @@
 }
 
 .close {
+   /* Styling for login modal */
     position: absolute;
     top: 10px;
     right: 10px;
@@ -189,73 +320,88 @@
 }
 
 .close:hover,.close:focus{
+   /* Styling for login modal */
   color: red;
   cursor: pointer;
 }
 
 .model_img_container{
+   /* Styling for login modal */
   text-align: center;
   margin: 24px 0 12px 0;
   position: relative;
 }
 .Login_img{
+   /* Styling for login modal */
   width: 50%;
   border-radius: 50%;
 }
 
 .username_password_container{
-  padding: 10px;
-  margin: 30px 10px 10px 10px ;
+   /* Styling for login modal */
+  padding: 5px;
+  margin: 5px 5px 5px 5px ;
 
   height: 60%;
 }
 
 .Login_submit_button{
+   /* Styling for login modal */
   width: 85%;
-  margin: 50px 10px 10px 10px ;
-  padding: 10px;
+  margin: 30px 10px 10px 10px ;
+  padding: 5px;
   cursor: pointer;
   background-color: rgb(0,0,0);
   border: 1px solid;
-  font-size: 20px;
+  font-size: 150%;
   color: white;
   border-radius: 25px;
   font-family:courier ;
 }
 
 .Register_button{
-  width: 25%;
+   /* Styling for login modal */
+  display: flex;
+  width: 30%;
   cursor: pointer;
   background-color: rgb(0,0,0);
   border: 1px solid;
   color: white;
   border-radius: 25px;
   font-family:courier ;
-  position: absolute;
   top: 20px:;
   left: 10px;
   padding-left: 10px;
-  font-size: 20px;
+  font-size: 100%;
   font-weight: bold;
 }
 
 
 
 .username_password_footer{
-  padding: 10px;
-  margin: 10px 10px 10px 10px ;
+   /* Styling for login modal */
+  padding: 1%;
   background-color: black;
   color: white;
   border-radius: 10px;
-  height: 20%;
+  height: auto;
+
 }
 
 .hidden {
+   /* Styling for login modal */
     display: none;
+}
+
+.Label p{
+   /* Styling for login modal */
+  margin: 10px;
+  font-size: 20px;
 }
 
 
 input[type="username"] {
+   /* Styling for login modal */
     padding: 10px;
     border-radius: 25px;
     width: 100%;
@@ -265,6 +411,7 @@ input[type="username"] {
 
 }
 input[type="password"] {
+   /* Styling for login modal */
     padding: 10px;
     border-radius: 25px;
     width: 100%;
@@ -276,57 +423,87 @@ input[type="password"] {
 
 
 /*//////////////////////////////////////////////////////////////////////*/
+/* Owl Carousel Styling */
 .owl-carousel{
+  /* Styling for Owl Carousel */
     display: flex;
     background-color: white;
 }
 
 .card_flipped {
+  /* Styling for Owlflipped card */
   background-color: transparent;
-  width: 100%;
-  height: 100%;
-  border: 1px solid #f1f1f1;
+  width: 40vh;
+  height: 55vh;
+  font-family:courier ;
 }
 
-.item{            
-    width: 375px;
-    height: 520px;
+.item{ 
+    /* Styling for Owl Carousel flipped card item */           
+    width: 40vh;
+    height: 55vh;
     background-color: white;
 
 }
 
 .card_inside {
+  /* Styling for Owl Carousel flipped card item */ 
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 40vh;
+  height: 55vh;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 
 .card_flipped:hover .card_inside {
+  /* Styling for Owl Carousel flipped card item */ 
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
+
 .card_flipped_front, .card_flipped_back {
+  /* Styling for Owl Carousel flipped card item */ 
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 40vh;
+  height: 55vh;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
-.card_flipped_front {
-  background-color: #bbb;
-  color: black;
-}
 
 .card_flipped_back {
-  background-color: dodgerblue;
+  /* Styling for Owl Carousel flipped card item */ 
+  background-color: black;
   color: white;
   transform: rotateY(180deg);
 }
+
+.card_flipped_back p{
+  /* Styling for Owl Carousel flipped card item */ 
+  padding: 10px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.card_flipped_back_button{
+  /* Styling for Owl Carousel flipped card button */ 
+  width: 65%;
+  height: 100%;
+  padding: 1%;
+  margin: 0.5%;
+  cursor: pointer;
+  transition-duration: 1.0s;
+  background-color: rgb(255,255,255);
+  border: 6px black;
+  border-style: double;
+  font-size: 20px;
+  font-family: courier;
+
+}
+
+
+
 .fade-in-image { 
   animation: fadeIn 10s; 
 }
@@ -337,16 +514,19 @@ input[type="password"] {
 }
 
 /*//////////////////////////////////////////////////////////////////////*/
-
+/* Search Bar Styling */
 .flex_search_bar_container {
+  /* Styling for the search bar container */
   display: flex;
   justify-content: center;
   background-color: rgb(4,4,4);
   padding: 10px 10px;
   margin: 10px 0 10px 0 ;
+
 }
 
 .search_bar {
+  /* Styling for the search bar */
     display: flex;
     align-items: left;
     border: 2px solid #ccc;
@@ -355,27 +535,34 @@ input[type="password"] {
     background-color: #fff;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     width: 75%;
+    font-family: courier;
 }
 
 input[type="text"] {
+  /* Styling for the search bar */
     border: none;
     outline: none;
     padding: 10px;
     border-radius: 25px;
-    width: 100%;
+    font-family: courier;
+    width: 100vh;
 }
 
 .search_button {
+  /* Styling for the search bar */
     background-color: darkgrey;
     color: black;
     border: none;
     border-radius: 25px;
     padding: 10px 40px;
-    margin-left: 5px;
+    margin-left: 20%;
     cursor: pointer;
+    font-family: courier;
 }
 /*//////////////////////////////////////////////////////////////////////*/
+/* Footer Styling */
 .Home_page_footer{
+  /* Styling for the footer */
   display: flex;
   width: auto;
   height: auto;
@@ -389,9 +576,10 @@ input[type="text"] {
 }
 
 .Footer_lists{
+  /* Styling for the footers */
   display: flex;
-  height: auto;
-  width: auto;
+  height: 40vh;
+  width: 100vh;
   background-color: black;
   color: white;
   font-family:courier ;
@@ -400,19 +588,24 @@ input[type="text"] {
 }
 
 li,a{
+  /* Styling for the footer */
   color:white;
   text-decoration: none;
-  padding: 1px;
+  padding: 1%;
   font-size: 16px;
+
 }
 
 ul{
+  /* Styling for the footer  */
   list-style-type: none;
-  margin-right: 100px;
+  margin-right: 10%;
+  margin-left: 10%;
 
 }
 
 .Social_media_logos{
+  /* Styling for the social media icons */
   display: flex;
   height: auto;
   width: 10%;
@@ -426,6 +619,7 @@ ul{
 
 }
 .fa {
+  /* Styling for the social media icons */
   padding-top: 10px;
   width: 75px;
   height: 75px;
@@ -435,35 +629,41 @@ ul{
 }
 
 .fa-facebook {
+  /* Styling for the social media icons */
   background:white ;
   color: black;
 }
 
 .fa-twitter {
+  /* Styling for the social media icons */
   background: white;
   color: black;
 }
 
 .fa-instagram {
+  /* Styling for the social media icons */
   background: white;
   color: black;
 }
 
 .Review_container{
+  /* Styling for the footer  */
   display: flex;
   height: auto;
   width: 50%;
-  padding: 100px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
   margin: 10px;
   background-color: black;
   color: white;
   font-family:courier ;
-  justify-content: right;
+  justify-content: center;
 }
 
 .Review_img{
-  width: 40%;
-  height: 60%;
+  /* Styling for the footer */
+  width: 85%;
+  height:85%;
+
 
 }
 
