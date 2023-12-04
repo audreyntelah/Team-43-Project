@@ -274,4 +274,54 @@ ALTER TABLE `review`
 ALTER TABLE `shoppingsession`
   ADD CONSTRAINT `shoppingsession_ibfk_1` FOREIGN KEY (`customerID`) REFERENCES `customer` (`customerID`);
 
+
+--Insert statements 
+INSERT INTO category (name) VALUES
+('Men'),
+('Women'),
+('Sale'),
+('Gift sets'),
+('Unisex');
+
+INSERT INTO sale (salePercentage, active) VALUES
+(20.0, 1),  -- 20% discount, active sale
+(15.0, 1),  -- 15% discount, active sale
+(25.0, 1),  -- 25% discount, active sale
+(10.0, 1),  -- 10% discount, active sale
+(30.0, 1);  -- 30% discount, active sale
+
+
+INSERT INTO product (categoryID, name, description, price, colour, scent, season, images) VALUES
+((SELECT categoryID FROM category WHERE name = 'Men'), "L'Élégant Mystère", "A masculine fragrance with woody and spicy notes, reminiscent of Dior Sauvage", 180.00, 'Dark Blue', 'Woody, Spicy', 'Fall/Winter', 'image_path_1'),
+((SELECT categoryID FROM category WHERE name = 'Men'), "Le Magnifique Cuir", "A rich and leathery aroma, evoking the essence of Tom Ford Tuscan Leather", 190.00, 'Rich Brown', 'Leathery, Rich', 'Winter', 'image_path_2'),
+((SELECT categoryID FROM category WHERE name = 'Men'), "Le Noble Gentilhomme", "A sophisticated and classic cologne with herbal and aromatic undertones, akin to Creed Aventus", 210.00, 'Green or Gold', 'Herbal, Aromatic', 'Spring/Summer', 'image_path_3'),
+((SELECT categoryID FROM category WHERE name = 'Men'), "L'Énigmatique Bois", "An enigmatic blend of dark woods and oriental spices, reminiscent of Terre d'Hermès", 200.00, 'Deep Brown', 'Oriental, Woody', 'Fall/Winter', 'image_path_4');
+
+INSERT INTO product (categoryID, name, description, price, colour, scent, season, images) VALUES
+((SELECT categoryID FROM category WHERE name = 'Women'), "La Belle Rose Étoilée", "A floral fragrance with a hint of sweetness, similar to Lancôme La Vie Est Belle", 160.00, 'Soft Pink', 'Floral, Sweet', 'Spring/Summer', 'image_path_1'),
+((SELECT categoryID FROM category WHERE name = 'Women'), "L'Amour Infini", "A romantic scent with fruity and floral notes, evoking the allure of Chanel Coco Mademoiselle", 175.00, 'Bright Red', 'Fruity, Floral', 'All Seasons', 'image_path_2'),
+((SELECT categoryID FROM category WHERE name = 'Women'), "La Douce Séduction", "A warm and sensual fragrance with vanilla and musk, akin to Yves Saint Laurent Black Opium", 180.00, 'Deep Purple', 'Warm, Sensual', 'Fall/Winter', 'image_path_3'),
+((SELECT categoryID FROM category WHERE name = 'Women'), "La Fleur Mystique", "A captivating blend of exotic blooms and spices, reminiscent of Gucci Bloom", 170.00, 'Mystical Green', 'Exotic, Spicy', 'All Seasons', 'image_path_4'),
+((SELECT categoryID FROM category WHERE name = 'Women'), "L'Étoile Brillante", "A sparkling and vibrant fragrance with a touch of citrus, similar to Dolce & Gabbana Light Blue", 165.00, 'Sky Blue', 'Citrus, Vibrant', 'Spring/Summer', 'image_path_5');
+
+INSERT INTO product (categoryID, name, description, price, colour, scent, season, images, saleID) VALUES
+((SELECT categoryID FROM category WHERE name = 'Sale'), "Le Trésor Caché", "A discounted fragrance offering a mix of various scents, similar to clearance or limited-time promotions from top brands", 120.00, 'Assorted', 'Varied', 'All Seasons', 'image_path_1', 1),
+((SELECT categoryID FROM category WHERE name = 'Sale'), "La Belle Affaire", "A budget-friendly fragrance with a versatile and pleasant aroma", 100.00, 'Multicolor', 'Versatile', 'All Seasons', 'image_path_2', 2),
+((SELECT categoryID FROM category WHERE name = 'Sale'), "L'Opportunité Parfumée", "An enticing, low-cost option with a distinctive scent profile", 110.00, 'Varied', 'Distinctive', 'All Seasons', 'image_path_3', 3),
+((SELECT categoryID FROM category WHERE name = 'Sale'), "Le Bonne Affaire", "A special offer that combines affordability with quality", 105.00, 'Varied', 'Diverse', 'All Seasons', 'image_path_4', 4),
+((SELECT categoryID FROM category WHERE name = 'Sale'), "Le Secret Révélé", "A discounted fragrance that unveils an affordable gem", 115.00, 'Assorted', 'Unique', 'All Seasons', 'image_path_5', 5);
+
+INSERT INTO product (categoryID, name, description, price, colour, scent, season, images) VALUES
+((SELECT categoryID FROM category WHERE name = 'Gift sets'), "Coffret Précieux", "A luxurious collection of fragrances suitable for gifting", 200.00, 'Elegant Gold', 'Assorted', 'All Seasons', 'image_path_1'),
+((SELECT categoryID FROM category WHERE name = 'Gift sets'), "Ensemble Parfumé Exquis", "A gift set that includes a variety of scents to suit different occasions", 180.00, 'Vibrant Multicolor', 'Varied', 'All Seasons', 'image_path_2'),
+((SELECT categoryID FROM category WHERE name = 'Gift sets'), "Collection Parfumée de Rêve", "A dreamy gift set featuring a range of scents for the recipient to explore", 210.00, 'Dreamy Blue', 'Diverse', 'All Seasons', 'image_path_3'),
+((SELECT categoryID FROM category WHERE name = 'Gift sets'), "Le Trésor d'Aromes", "A curated set of fragrances that makes for a thoughtful gift", 190.00, 'Rich Brown', 'Assorted', 'All Seasons', 'image_path_4'),
+((SELECT categoryID FROM category WHERE name = 'Gift sets'), "Coffret Cadeau Étoilé", "A beautifully packaged gift set with a celestial theme", 175.00, 'Starry Night Blue', 'Varied', 'All Seasons', 'image_path_5');
+
+INSERT INTO product (categoryID, name, description, price, colour, scent, season, images) VALUES
+((SELECT categoryID FROM category WHERE name = 'Unisex'), "L'Équilibre Épicé", "A unisex fragrance with a harmonious blend of spices, akin to Byredo Bal D'Afrique", 170.00, 'Spice Brown', 'Spicy, Harmonious', 'All Seasons', 'image_path_1'),
+((SELECT categoryID FROM category WHERE name = 'Unisex'), "Le Charme Universel", "A versatile scent that appeals to both men and women, similar to Maison Francis Kurkdjian Baccarat Rouge 540", 200.00, 'Velvet Red', 'Versatile, Universal', 'All Seasons', 'image_path_2'),
+((SELECT categoryID FROM category WHERE name = 'Unisex'), "L'Essence Mystique", "A captivating and enigmatic aroma that transcends gender, reminiscent of Tom Ford Black Orchid", 190.00, 'Mystic Purple', 'Enigmatic, Captivating', 'All Seasons', 'image_path_3'),
+((SELECT categoryID FROM category WHERE name = 'Unisex'), "La Fusion Éclatante", "An energetic and vibrant fragrance suitable for all, similar to Jo Malone London Wood Sage & Sea Salt", 175.00, 'Ocean Blue', 'Energetic, Vibrant', 'Spring/Summer', 'image_path_4'),
+((SELECT categoryID FROM category WHERE name = 'Unisex'), "Le Parfum Infini", "A timeless and unisex fragrance that embodies the essence of 'Le Paradis'", 180.00, 'Eternal Gold', 'Timeless, Unisex', 'All Seasons', 'image_path_5');
 COMMIT;
