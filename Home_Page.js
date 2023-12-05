@@ -129,7 +129,7 @@
             <button class="Register_button" onclick="showLoginForm()">Back to Login</button>
             <span class="close" id="close_Modal" onclick="closeModal()">&times;</span>
             <div class="model_img_container">
-                <a href="javascript:showAdminForm()"><img src="logo.png" class="Login_img"></a>
+                <a href="javascript:showAdminForm()"><img src="Images/logo.png" class="Login_img"></a>
             </div>
             <div class="username_password_container">
                 <label class="Label" for="newUsername"><b><p> Create a Username</b></p></label>
@@ -151,7 +151,7 @@
             <button class="Register_button" onclick="showRegisterForm()">Register Here</button>
             <span class="close" id="close_Modal"onclick="closeModal()">&times;</span>
             <div class="model_img_container">
-                <a href="javascript:showAdminForm()"><img src="logo.png" class="Login_img"></a>
+                <a href="javascript:showAdminForm()"><img src="Images/logo.png" class="Login_img"></a>
             </div>
             <div class="username_password_container">
                 <label class="Label" for="uname"><b><p>Username</p></b></label>
@@ -164,7 +164,7 @@
                         <input type="checkbox" unchecked="unchecked" name="remember"><b> Remember me</b>
                     </label>
                     <br><br>
-                    <span><a href="javascript:alert('We have sent a password reset email to your email address , please check your inbox');" style="color: white;">Change Password</a></span>
+                    <a href="javascript:alert('We have sent a password reset email to your email address , please check your inbox');" ><b>Change Password</b></a>
                 </div>
             </div>
         `;
@@ -175,7 +175,7 @@
             <button class="Register_button" onclick="showLoginForm()">Customer Login</button>
             <span class="close" id="close_Modal"onclick="closeModal()">&times;</span>
             <div class="model_img_container">
-                <a href="javascript:showAdminForm()"><img src="logo.png" class="Login_img"></a>
+                <a href="javascript:showAdminForm()"><img src="Images/logo.png" class="Login_img"></a>
             </div>
             <div class="username_password_container">
                 <label class="Label" for="uname"><b><p>Admin Username<b></p></label>
@@ -184,7 +184,7 @@
                 <input type="password" placeholder="Enter Admin Password" name="psw">
                 <button class="Login_submit_button" type="submit"><b>Login</b></button>
                 <div class="username_password_footer">
-                <span><a href="javascript:alert('We have sent a password reset email to your email address , please check your inbox');" style="color: white;">Change Password</a></span>
+                    <a href="javascript:alert('We have sent a password reset email to your email address , please check your inbox');" ><b>Change Password</b></a>
                 </div>
             </div>
         `;
@@ -196,7 +196,7 @@
             openModal.style.display = 'none';
             }
         }
-    //Changes the styling of a section when the mouse is hovers over it 
+    //Changes the styling of a section when the mouse  hovers over it 
     function Colour_Change_Left() {
         var elementToChange = document.querySelector('.section_left_container');
         var elementToChange2= document.querySelector('.section_left_container_text');

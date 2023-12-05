@@ -58,13 +58,11 @@
   transition-duration: 1.0s;
   margin: 10px;
   height: 60vh;
-  min-width: 40vh;
-  width: auto;
   background-color: black;
   float: left;
-  width: 30%;
+  width: 27.5vw;
   font-family: courier;
-  font-size: 110%;
+  font-size: 2vw;
   border:none ;
   border-style: none;
 }
@@ -72,14 +70,16 @@
 .section_left_container_text{
   /* Text styling for the left section */
   padding: 10%;
-  margin: 10vh 5vh 5vh 5vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
   color: white;
   transition-duration: 1.0s;
+  height: 100%;
 }
 
 .section_left_button{
   /* Button styling for the left section */
-  width: 50vh;
+  width: 20vw;
   height: 10vh;
   padding: 5%;
   cursor: pointer;
@@ -88,10 +88,11 @@
   color: white;
   border: 6px white ;
   border-style: double;
-  font-size: 20px;
+  font-size: 3vh;
   font-family: courier;
 
 }
+
 
 /*//////////////////////////////////////////////////////////////////////*/
  /* Right Section Styling */
@@ -102,12 +103,11 @@
   transition-duration: 1.0s;
   margin: 10px;
   height: 60vh;
-  min-width: 40vh;
   background-color: black;
   float: right;
-  width: 30%;
+  width: 27.5vw;
   font-family: courier;
-  font-size: 110%;
+  font-size: 2vw;
   border:none ;
   border-style: none;
 }
@@ -115,25 +115,26 @@
 .section_right_container_text{
   /* Text styling for the right section */
   padding: 10%;
-  margin: 10vh 5vh 5vh 5vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
   color: white;
   transition-duration: 1.0s;
 
 }
 .section_right_button{
   /* Button styling for the right section */
-  width: 50vh;
+  width: 20vw;
   height: 10vh;
   padding: 5%;
-
   cursor: pointer;
   transition-duration: 1.0s;
   background-color: black;
   color: white;
   border: 6px white ;
   border-style: double;
-  font-size: 20px;
+  font-size: 3vh;
   font-family: courier;
+
 
 }
 
@@ -158,12 +159,12 @@
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 10px 10px;
+  padding: 10px;
 }
 
 .section_middle_container_text{
   /* Text styling for the middle section */
-  font-size: 1.9vh;
+  font-size: 0.95vw;
   color: black;
 }
 /*//////////////////////////////////////////////////////////////////////*/
@@ -182,15 +183,15 @@
 
 .nav_btn {
   /* Navigation button styling */
-  width: 35vh;
+  width: 15vw;
   height: 5vh;
-  
+  padding-bottom: 10%;
   cursor: pointer;
   transition-duration: 1.0s;
   background-color: rgb(255,255,255);
   border: 6px black;
   border-style: double;
-  font-size: 20px;
+  font-size: 1.5vw;
   font-family: courier;
 
 }
@@ -205,7 +206,8 @@
   /* Styling for links in navigation */
   margin:0.5%;
   padding: 0%;
-  width: 35vh;
+  width: 15vw;
+  height: 5vh;
   text-decoration: none;
 
  }
@@ -214,9 +216,11 @@
 /* Slideshow Styling */
 .Slide_Image{
   /* Styling for the slideshow */
-  width: 75vh;
+  width: 40vw;
   height: 55vh;
   padding-block: 15px;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
 }
 
 
@@ -225,8 +229,9 @@
   display: flex;
   max-width: 100%;
   position: relative;
-  margin-top: 10px;
+  margin: 10px;
   justify-content: center;
+
 
 }
 
@@ -296,10 +301,10 @@
 .login_modal_content_container {
    /* Styling for login modal */
     background-color: #fff;
-    width: 50vh;
+    width: 25vw;
     height: 70vh;
-    min-height: 600px;
-    min-width: 400px;
+    min-height: 500px;
+ 
     margin: 50px auto;
     padding: 20px;
     text-align: center;
@@ -347,13 +352,13 @@
 
 .Login_submit_button{
    /* Styling for login modal */
-  width: 85%;
+  width: 20vw;
   margin: 30px 10px 10px 10px ;
   padding: 5px;
   cursor: pointer;
   background-color: rgb(0,0,0);
   border: 1px solid;
-  font-size: 150%;
+  font-size: 2.5vh;
   color: white;
   border-radius: 25px;
   font-family:courier ;
@@ -362,7 +367,7 @@
 .Register_button{
    /* Styling for login modal */
   display: flex;
-  width: 30%;
+  width: 10vh 5vw;
   cursor: pointer;
   background-color: rgb(0,0,0);
   border: 1px solid;
@@ -372,19 +377,27 @@
   top: 20px:;
   left: 10px;
   padding-left: 10px;
-  font-size: 100%;
+  font-size: 2vh;
   font-weight: bold;
+
 }
 
 
 
-.username_password_footer{
-   /* Styling for login modal */
+.username_password_footer {
+   /* Styling for login modal footer */
   padding: 1%;
+  font-size: 2vh;
   background-color: black;
   color: white;
   border-radius: 10px;
   height: auto;
+  width: auto;
+}
+
+.username_password_footer a{
+  text-decoration: none;
+  color: white;
 
 }
 
@@ -396,7 +409,7 @@
 .Label p{
    /* Styling for login modal */
   margin: 10px;
-  font-size: 20px;
+  font-size: 2.5vh;
 }
 
 
@@ -404,7 +417,7 @@ input[type="username"] {
    /* Styling for login modal */
     padding: 10px;
     border-radius: 25px;
-    width: 100%;
+    width:20vw;
     background-color: black;
     color: white;
     font-family:courier ;
@@ -414,7 +427,7 @@ input[type="password"] {
    /* Styling for login modal */
     padding: 10px;
     border-radius: 25px;
-    width: 100%;
+    width: 20vw;
     background-color: black;
     color: white;
     font-family:courier ;
@@ -440,7 +453,7 @@ input[type="password"] {
 
 .item{ 
     /* Styling for Owl Carousel flipped card item */           
-    width: 40vh;
+    width: 40vw ;
     height: 55vh;
     background-color: white;
 
@@ -481,23 +494,27 @@ input[type="password"] {
 
 .card_flipped_back p{
   /* Styling for Owl Carousel flipped card item */ 
-  padding: 10px;
-  margin: 10px;
-  margin-top: 20px;
+  padding: 0.5vw;
+  margin: 0.5vw;
+  font-size: 2vh;
 }
 
+.card_flipped_back h2{
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  font-size: 3vh;
+
+}
 .card_flipped_back_button{
   /* Styling for Owl Carousel flipped card button */ 
-  width: 65%;
-  height: 100%;
-  padding: 1%;
-  margin: 0.5%;
+  width: 15vw;
+  height: 5vh;
   cursor: pointer;
   transition-duration: 1.0s;
   background-color: rgb(255,255,255);
   border: 6px black;
   border-style: double;
-  font-size: 20px;
+  font-size: 2.5vh;
   font-family: courier;
 
 }
@@ -534,7 +551,7 @@ input[type="password"] {
     padding: 5px;
     background-color: #fff;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    width: 75%;
+    width: 60vw;
     font-family: courier;
 }
 
@@ -546,6 +563,7 @@ input[type="text"] {
     border-radius: 25px;
     font-family: courier;
     width: 100vh;
+    flex-grow: 1;
 }
 
 .search_button {
@@ -554,8 +572,8 @@ input[type="text"] {
     color: black;
     border: none;
     border-radius: 25px;
-    padding: 10px 40px;
-    margin-left: 20%;
+    font-size: 75%;
+    width: 10vw;
     cursor: pointer;
     font-family: courier;
 }
@@ -565,7 +583,9 @@ input[type="text"] {
   /* Styling for the footer */
   display: flex;
   width: auto;
-  height: auto;
+  height: 100%;
+  min-height: 300px;
+  min-width: 600px;
   padding: 10px;
   margin: 10px;
   background-color: black;
@@ -579,7 +599,9 @@ input[type="text"] {
   /* Styling for the footers */
   display: flex;
   height: 40vh;
-  width: 100vh;
+  min-height: 300px;
+  width: 100vw;
+  min-width: 550px;
   background-color: black;
   color: white;
   font-family:courier ;
@@ -587,20 +609,25 @@ input[type="text"] {
 
 }
 
-li,a{
+li,{
   /* Styling for the footer */
   color:white;
   text-decoration: none;
+}
+
+.Footer_Links{
+  color: white;
   padding: 1%;
-  font-size: 16px;
+  font-size: 2vh;
+  text-decoration: none;
 
 }
 
 ul{
   /* Styling for the footer  */
   list-style-type: none;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 1 vw;
+  margin-left: 1 vw;
 
 }
 
@@ -625,7 +652,7 @@ ul{
   height: 75px;
   text-align: center;
   text-decoration: none;
-  margin: px;
+
 }
 
 .fa-facebook {
@@ -649,8 +676,8 @@ ul{
 .Review_container{
   /* Styling for the footer  */
   display: flex;
-  height: auto;
-  width: 50%;
+  height: 100%;
+  width: 50vw;
   padding: 10px 10px 10px 10px;
   margin: 10px;
   background-color: black;
@@ -661,10 +688,43 @@ ul{
 
 .Review_img{
   /* Styling for the footer */
-  width: 85%;
-  height:85%;
+  width: 35vw;
+  height:40vh;
+
+
 
 
 }
 
 /*//////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 1500px) {
+  .Review_container {
+    display: none;
+  }
+
+  .Social_media_logos {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .Slide_Image{
+    width: 30vw;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .section_middle_container_text{
+    display: none;
+  }
+}
+
+  
+@media only screen and (max-width: 900px) {
+  .login_modal_content_container{
+    width:50%;
+    
+  }
+}
