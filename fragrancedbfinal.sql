@@ -324,4 +324,31 @@ INSERT INTO product (categoryID, name, description, price, colour, scent, season
 ((SELECT categoryID FROM category WHERE name = 'Unisex'), "L'Essence Mystique", "A captivating and enigmatic aroma that transcends gender, reminiscent of Tom Ford Black Orchid", 190.00, 'Mystic Purple', 'Enigmatic, Captivating', 'All Seasons', 'image_path_3'),
 ((SELECT categoryID FROM category WHERE name = 'Unisex'), "La Fusion Éclatante", "An energetic and vibrant fragrance suitable for all, similar to Jo Malone London Wood Sage & Sea Salt", 175.00, 'Ocean Blue', 'Energetic, Vibrant', 'Spring/Summer', 'image_path_4'),
 ((SELECT categoryID FROM category WHERE name = 'Unisex'), "Le Parfum Infini", "A timeless and unisex fragrance that embodies the essence of 'Le Paradis'", 180.00, 'Eternal Gold', 'Timeless, Unisex', 'All Seasons', 'image_path_5');
+
+INSERT INTO productinventory (productID, quantity) VALUES
+(1, 5),  -- For "L'Élégant Mystère"
+(2, 5),  -- For "Le Magnifique Cuir"
+(3, 5),  -- For "Le Noble Gentilhomme"
+(4, 5),  -- For "L'Énigmatique Bois"
+(5, 5),  -- For "La Belle Rose Étoilée"
+(6, 5),  -- For "L'Amour Infini"
+(7, 5),  -- For "La Douce Séduction"
+(8, 5),  -- For "La Fleur Mystique"
+(9, 5),  -- For "L'Étoile Brillante"
+(10, 5), -- For "Le Trésor Caché"
+(11, 5), -- For "La Belle Affaire"
+(12, 5), -- For "L'Opportunité Parfumée"
+(13, 5), -- For "Le Bonne Affaire"
+(14, 5), -- For "Le Secret Révélé"
+(15, 5), -- For "Coffret Précieux"
+(16, 5), -- For "Ensemble Parfumé Exquis"
+(17, 5), -- For "Collection Parfumée de Rêve"
+(18, 5), -- For "Le Trésor d'Aromes"
+(19, 5), -- For "Coffret Cadeau Étoilé"
+(20, 5), -- For "L'Équilibre Épicé"
+(21, 5), -- For "Le Charme Universel"
+(22, 5), -- For "L'Essence Mystique"
+(23, 5), -- For "La Fusion Éclatante"
+(24, 5); -- For "Le Parfum Infini"
+
 COMMIT;
