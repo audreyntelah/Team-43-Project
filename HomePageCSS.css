@@ -1,0 +1,730 @@
+* {
+      box-sizing: border-box;
+    }
+
+/*//////////////////////////////////////////////////////////////////////*/
+/*Heading Styling*/
+.flex_logo_container {
+  /*Flex container for the logo*/
+  display: flex;
+  justify-content: center;
+  background-color: rgb(4,4,4);
+  transition: 1.0s;
+  padding: 10px 10px;
+}
+
+.logo_transition{
+   /* Logo transition effect */
+  transition: 0.5s;
+  width: 20%;
+  height: 20%;
+}
+
+.basket_button{
+   /* Styling for header buttons and icons */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+
+}
+
+.login_button{
+   /* Styling for header buttons and icons */
+  position: absolute;
+  top: 10px;
+  right: 80px;
+
+  width: 50px;
+  height: 50px;
+  
+}
+
+.header_icon {
+   /* Styling for header buttons and icons */
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+/*//////////////////////////////////////////////////////////////////////*/
+/* Left Section Styling */
+.section_left_container{
+   /* Container for the left section */
+  display: flex;
+  justify-content: center;
+  transition-duration: 1.0s;
+  margin: 10px;
+  height: 60vh;
+  background-color: black;
+  float: left;
+  width: 27.5vw;
+  font-family: courier;
+  font-size: 2vw;
+  border:none ;
+  border-style: none;
+}
+
+.section_left_container_text{
+  /* Text styling for the left section */
+  padding: 10%;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  color: white;
+  transition-duration: 1.0s;
+  height: 100%;
+}
+
+.section_left_button{
+  /* Button styling for the left section */
+  width: 20vw;
+  height: 10vh;
+  padding: 5%;
+  cursor: pointer;
+  transition-duration: 1.0s;
+  background-color: black;
+  color: white;
+  border: 6px white ;
+  border-style: double;
+  font-size: 3vh;
+  font-family: courier;
+
+}
+
+
+/*//////////////////////////////////////////////////////////////////////*/
+ /* Right Section Styling */
+.section_right_container{
+  /* Container for the right section */
+  display: flex;
+  justify-content: center;
+  transition-duration: 1.0s;
+  margin: 10px;
+  height: 60vh;
+  background-color: black;
+  float: right;
+  width: 27.5vw;
+  font-family: courier;
+  font-size: 2vw;
+  border:none ;
+  border-style: none;
+}
+
+.section_right_container_text{
+  /* Text styling for the right section */
+  padding: 10%;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  color: white;
+  transition-duration: 1.0s;
+
+}
+.section_right_button{
+  /* Button styling for the right section */
+  width: 20vw;
+  height: 10vh;
+  padding: 5%;
+  cursor: pointer;
+  transition-duration: 1.0s;
+  background-color: black;
+  color: white;
+  border: 6px white ;
+  border-style: double;
+  font-size: 3vh;
+  font-family: courier;
+
+
+}
+
+
+.fade-in-section { 
+  animation: fadeIn 5s; 
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+/* Middle Section Styling */
+.section_middle_container{
+  /* Container for the middle section */
+  display: flex;
+  justify-content: center;
+  background-color: darkgrey;
+  height: 8vh;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.section_middle_container_text{
+  /* Text styling for the middle section */
+  font-size: 0.95vw;
+  color: black;
+}
+/*//////////////////////////////////////////////////////////////////////*/
+/* Navigation Styling */
+.nav_container {
+  /* Navigation container styling */
+  display: flex;
+  background-color: darkgray;
+  justify-content: center;
+  text-align: center;
+  padding: 1%;
+  font-size: 100%;
+
+
+}
+
+.nav_btn {
+  /* Navigation button styling */
+  width: 15vw;
+  height: 5vh;
+  padding-bottom: 10%;
+  cursor: pointer;
+  transition-duration: 1.0s;
+  background-color: rgb(255,255,255);
+  border: 6px black;
+  border-style: double;
+  font-size: 1.5vw;
+  font-family: courier;
+
+}
+
+.nav_btn:hover{
+  color: white;
+  background-color: black;
+  border-color:white;
+
+}
+ .Link_Button{
+  /* Styling for links in navigation */
+  margin:0.5%;
+  padding: 0%;
+  width: 15vw;
+  height: 5vh;
+  text-decoration: none;
+
+ }
+
+/*//////////////////////////////////////////////////////////////////////*/
+/* Slideshow Styling */
+.Slide_Image{
+  /* Styling for the slideshow */
+  width: 40vw;
+  height: 55vh;
+  padding-block: 15px;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+}
+
+
+.slideshow_box {
+  /* Styling for the slideshow */
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  margin: 10px;
+  justify-content: center;
+
+
+}
+
+
+.Slide_number {
+  /* Styling for the slideshow */
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 23px 27px;
+  padding-top: 30px;
+  position: absolute;
+  top: 0;
+}
+
+
+.Slide_Indicator {
+  /* Styling for the slideshow */
+  height: 1%;
+  width: 1%;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: none;
+  padding: 10px;
+  transition: background-color 0.6s ease;
+}
+
+.Slide_Indicator_Container {
+  /* Styling for the slideshow */
+  text-align:center;
+  padding:20px;
+}
+
+.active {
+  /* Slideshow indicator and fade animation styling */
+  background-color: black;
+}
+
+.fade {
+  /* Slideshow indicator and fade animation styling */
+  animation-name: fade;
+  animation-duration: 6.5s;
+}
+
+@keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+/*//////////////////////////////////////////////////////////////////////*/
+/* Modal Styling */
+.login_modal {
+   /* Styling for login modal */
+  display: flex;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+.hidden{
+   /* Styling for login modal */
+  display: none;
+}
+
+.login_modal_content_container {
+   /* Styling for login modal */
+    background-color: #fff;
+    width: 25vw;
+    height: 70vh;
+    min-height: 500px;
+ 
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    font-family:courier ;
+
+}
+
+.close {
+   /* Styling for login modal */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding-right: 10px;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.close:hover,.close:focus{
+   /* Styling for login modal */
+  color: red;
+  cursor: pointer;
+}
+
+.model_img_container{
+   /* Styling for login modal */
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+.Login_img{
+   /* Styling for login modal */
+  width: 50%;
+  border-radius: 50%;
+}
+
+.username_password_container{
+   /* Styling for login modal */
+  padding: 5px;
+  margin: 5px 5px 5px 5px ;
+
+  height: 60%;
+}
+
+.Login_submit_button{
+   /* Styling for login modal */
+  width: 20vw;
+  margin: 30px 10px 10px 10px ;
+  padding: 5px;
+  cursor: pointer;
+  background-color: rgb(0,0,0);
+  border: 1px solid;
+  font-size: 2.5vh;
+  color: white;
+  border-radius: 25px;
+  font-family:courier ;
+}
+
+.Register_button{
+   /* Styling for login modal */
+  display: flex;
+  width: 10vh 5vw;
+  cursor: pointer;
+  background-color: rgb(0,0,0);
+  border: 1px solid;
+  color: white;
+  border-radius: 25px;
+  font-family:courier ;
+  top: 20px:;
+  left: 10px;
+  padding-left: 10px;
+  font-size: 2vh;
+  font-weight: bold;
+
+}
+
+
+
+.username_password_footer {
+   /* Styling for login modal footer */
+  padding: 1%;
+  font-size: 2vh;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  height: auto;
+  width: auto;
+}
+
+.username_password_footer a{
+  text-decoration: none;
+  color: white;
+
+}
+
+.hidden {
+   /* Styling for login modal */
+    display: none;
+}
+
+.Label p{
+   /* Styling for login modal */
+  margin: 10px;
+  font-size: 2.5vh;
+}
+
+
+input[type="username"] {
+   /* Styling for login modal */
+    padding: 10px;
+    border-radius: 25px;
+    width:20vw;
+    background-color: black;
+    color: white;
+    font-family:courier ;
+
+}
+input[type="password"] {
+   /* Styling for login modal */
+    padding: 10px;
+    border-radius: 25px;
+    width: 20vw;
+    background-color: black;
+    color: white;
+    font-family:courier ;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////////*/
+/* Owl Carousel Styling */
+.owl-carousel{
+  /* Styling for Owl Carousel */
+    display: flex;
+    background-color: white;
+}
+
+.card_flipped {
+  /* Styling for Owlflipped card */
+  background-color: transparent;
+  width: 40vh;
+  height: 55vh;
+  font-family:courier ;
+}
+
+.item{ 
+    /* Styling for Owl Carousel flipped card item */           
+    width: 40vw ;
+    height: 55vh;
+    background-color: white;
+
+}
+
+.card_inside {
+  /* Styling for Owl Carousel flipped card item */ 
+  position: relative;
+  width: 40vh;
+  height: 55vh;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card_flipped:hover .card_inside {
+  /* Styling for Owl Carousel flipped card item */ 
+  transform: rotateY(180deg);
+}
+
+
+.card_flipped_front, .card_flipped_back {
+  /* Styling for Owl Carousel flipped card item */ 
+  position: absolute;
+  width: 40vh;
+  height: 55vh;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.card_flipped_back {
+  /* Styling for Owl Carousel flipped card item */ 
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.card_flipped_back p{
+  /* Styling for Owl Carousel flipped card item */ 
+  padding: 0.5vw;
+  margin: 0.5vw;
+  font-size: 2vh;
+}
+
+.card_flipped_back h2{
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  font-size: 3vh;
+
+}
+.card_flipped_back_button{
+  /* Styling for Owl Carousel flipped card button */ 
+  width: 15vw;
+  height: 5vh;
+  cursor: pointer;
+  transition-duration: 1.0s;
+  background-color: rgb(255,255,255);
+  border: 6px black;
+  border-style: double;
+  font-size: 2.5vh;
+  font-family: courier;
+
+}
+
+
+
+.fade-in-image { 
+  animation: fadeIn 10s; 
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+/* Search Bar Styling */
+.flex_search_bar_container {
+  /* Styling for the search bar container */
+  display: flex;
+  justify-content: center;
+  background-color: rgb(4,4,4);
+  padding: 10px 10px;
+  margin: 10px 0 10px 0 ;
+
+}
+
+.search_bar {
+  /* Styling for the search bar */
+    display: flex;
+    align-items: left;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    width: 60vw;
+    font-family: courier;
+}
+
+input[type="text"] {
+  /* Styling for the search bar */
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-family: courier;
+    width: 100vh;
+    flex-grow: 1;
+}
+
+.search_button {
+  /* Styling for the search bar */
+    background-color: darkgrey;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    font-size: 75%;
+    width: 10vw;
+    cursor: pointer;
+    font-family: courier;
+}
+/*//////////////////////////////////////////////////////////////////////*/
+/* Footer Styling */
+.Home_page_footer{
+  /* Styling for the footer */
+  display: flex;
+  width: auto;
+  height: 100%;
+  min-height: 300px;
+  min-width: 600px;
+  padding: 10px;
+  margin: 10px;
+  background-color: black;
+  color: white;
+  font-family:courier ;
+
+
+}
+
+.Footer_lists{
+  /* Styling for the footers */
+  display: flex;
+  height: 40vh;
+  min-height: 300px;
+  width: 100vw;
+  min-width: 550px;
+  background-color: black;
+  color: white;
+  font-family:courier ;
+
+
+}
+
+li,{
+  /* Styling for the footer */
+  color:white;
+  text-decoration: none;
+}
+
+.Footer_Links{
+  color: white;
+  padding: 1%;
+  font-size: 2vh;
+  text-decoration: none;
+
+}
+
+ul{
+  /* Styling for the footer  */
+  list-style-type: none;
+  margin-right: 1 vw;
+  margin-left: 1 vw;
+
+}
+
+.Social_media_logos{
+  /* Styling for the social media icons */
+  display: flex;
+  height: auto;
+  width: 10%;
+  padding: 10px;
+  margin: 10px;
+  background-color: black;
+  color: white;
+  font-size: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.fa {
+  /* Styling for the social media icons */
+  padding-top: 10px;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.fa-facebook {
+  /* Styling for the social media icons */
+  background:white ;
+  color: black;
+}
+
+.fa-twitter {
+  /* Styling for the social media icons */
+  background: white;
+  color: black;
+}
+
+.fa-instagram {
+  /* Styling for the social media icons */
+  background: white;
+  color: black;
+}
+
+.Review_container{
+  /* Styling for the footer  */
+  display: flex;
+  height: 100%;
+  width: 50vw;
+  padding: 10px 10px 10px 10px;
+  margin: 10px;
+  background-color: black;
+  color: white;
+  font-family:courier ;
+  justify-content: center;
+}
+
+.Review_img{
+  /* Styling for the footer */
+  width: 35vw;
+  height:40vh;
+
+
+
+
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 1500px) {
+  .Review_container {
+    display: none;
+  }
+
+  .Social_media_logos {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .Slide_Image{
+    width: 30vw;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .section_middle_container_text{
+    display: none;
+  }
+}
+
+  
+@media only screen and (max-width: 900px) {
+  .login_modal_content_container{
+    width:50%;
+    
+  }
+}
