@@ -40,7 +40,7 @@
     }
 }
 
-// Function to validate password complexity
+// Function to validate password complexity regex
 function validatePassword($password) {
     // Check if the password is at least 8 characters long
     if (strlen($password) < 8) {
