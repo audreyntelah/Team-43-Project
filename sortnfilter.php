@@ -1,6 +1,5 @@
 <?php 
 //sort and filter function for products
-//search bar
 session_start();
 require_once('connectdb.php');
 try{
@@ -11,8 +10,10 @@ try{
     $stat = $db->query($sql);
     $rows = $db->query($sql);
     $stat->execute();
-    if ($rows->rowCount()>0){
-        while  ($row =  $rows->fetch())	{
+    $result = $stat->fetchAll();
+    if($result && $rows->rowCount() > 0)
+        if ($rows->rowCount()>0){
+            while  ($row =  $rows->fetch())	{
         //display products 
         }
     } else{
@@ -25,8 +26,10 @@ try{
     $stat = $db->query($sql);
     $rows = $db->query($sql);
     $stat->execute();
-    if ($rows->rowCount()>0){
-        while  ($row =  $rows->fetch())	{
+    $result = $stat->fetchAll();
+    if($result && $rows->rowCount() > 0)
+        if ($rows->rowCount()>0){
+            while  ($row =  $rows->fetch())	{
         //display products 
         }
     } else{
@@ -50,8 +53,8 @@ try{
         $stat = $db->query($sql);
         $rows = $db->query($sql);
         $stat->execute();
-        //$result = $stat->fetchAll();
-        //if($result && $rows->rowCount() > 0)
+        $result = $stat->fetchAll();
+        if($result && $rows->rowCount() > 0)
         if ($rows->rowCount()>0){
             while  ($row =  $rows->fetch())	{
             //display products 
@@ -64,23 +67,6 @@ try{
         //display products like normal
     }
 
-    //search bar for products
-    //get search query from search form submission
-    //sort out code for handling search query
-    $searchQuery = isset($_POST['search'])?$_POST['search']:false;
-    $sql = "SELECT * FROM product, category WHERE
-            product.name LIKE '%$searchQuery%' OR
-            category.name LIKE '%$searchQuery%'";
-    $stat = $db->query($sql);
-    $rows = $db->query($sql);
-    $stat->execute();
-    if ($rows->rowCount()>0){
-        while  ($row =  $rows->fetch())	{
-        //display products 
-        }
-    } else{
-        echo "No results matching your search";
-    }
 }
 catch (PDOexception $ex){
     echo "Sorry, a database error occurred! <br>";
