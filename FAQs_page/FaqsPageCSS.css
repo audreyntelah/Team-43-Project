@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+/*Heading Styling*/
+.flex_logo_container {
+/*Flex container for the logo*/
+display: flex;
+justify-content: center;
+background-color: rgb(4,4,4);
+transition: 1.0s;
+padding: 10px 10px;
+}
+  
+.logo_transition{
+/* Logo transition effect */
+transition: 0.5s;
+width: 20%;
+height: 20%;
+}
+  
+.basket_button{
+/* Styling for header buttons and icons */
+position: absolute;
+top: 10px;
+right: 10px;
+width: 50px;
+height: 50px;
+}
+  
+.login_button{
+/* Styling for header buttons and icons */
+position: absolute;
+top: 10px;
+right: 80px;
+width: 50px;
+height: 50px;
+}
+  
+.header_icon {
+/* Styling for header buttons and icons */
+width: 50px;
+height: 50px;
+position: absolute;
+top: 0px;
+right: 0px;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+/* Middle Section Styling */
+.section_middle_container{
+/* Container for the middle section */
+display: flex;
+justify-content: center;
+background-color: darkgrey;
+height: 8vh;
+width: 100%;
+margin-top: 10px;
+margin-bottom: 10px;
+padding: 10px;
+}
+  
+.section_middle_container_text{
+/* Text styling for the middle section */
+font-size: 0.95vw;
+color: black;
+}
+/*//////////////////////////////////////////////////////////////////////*/
+/* Navigation Styling */
+.nav_container {
+/* Navigation container styling */
+display: flex;
+background-color: darkgray;
+justify-content: center;
+text-align: center;
+padding: 1%;
+font-size: 100%;
+}
+  
+.nav_btn {
+/* Navigation button styling */
+width: 15vw;
+height: 5vh;
+padding-bottom: 10%;
+cursor: pointer;
+transition-duration: 1.0s;
+background-color: rgb(255,255,255);
+border: 6px black;
+border-style: double;
+font-size: 1.5vw;
+font-family: courier;
+}
+  
+.nav_btn:hover{
+color: white;
+background-color: black;
+border-color:white;
+}
+
+.Link_Button{
+/* Styling for links in navigation */
+margin:0.5%;
+padding: 0%;
+width: 15vw;
+height: 5vh;
+text-decoration: none;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+/* Modal Styling */
+.login_modal {
+/* Styling for login modal */
+display: flex;
+position: fixed;
+top: 0px;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.7);
+z-index: 2;
+}
+.hidden{
+/* Styling for login modal */
+display: none;
+}
+
+.login_modal_content_container {
+/* Styling for login modal */
+background-color: #fff;
+width: 25vw;
+height: 70vh;
+min-height: 500px;
+
+margin: 50px auto;
+padding: 20px;
+text-align: center;
+position: relative;
+font-family:courier ;
+}
+
+.close {
+/* Styling for login modal */
+position: absolute;
+top: 10px;
+right: 10px;
+padding-right: 10px;
+font-size: 50px;
+font-weight: bold;
+}
+
+.close:hover,.close:focus{
+/* Styling for login modal */
+color: red;
+cursor: pointer;
+}
+
+.model_img_container{
+/* Styling for login modal */
+text-align: center;
+margin: 24px 0 12px 0;
+position: relative;
+}
+.Login_img{
+/* Styling for login modal */
+width: 50%;
+border-radius: 50%;
+}
+
+.username_password_container{
+/* Styling for login modal */
+padding: 5px;
+margin: 5px 5px 5px 5px ;
+height: 60%;
+}
+
+.Login_submit_button{
+/* Styling for login modal */
+width: 20vw;
+margin: 30px 10px 10px 10px ;
+padding: 5px;
+cursor: pointer;
+background-color: rgb(0,0,0);
+border: 1px solid;
+font-size: 2.5vh;
+color: white;
+border-radius: 25px;
+font-family:courier ;
+}
+
+.Register_button{
+/* Styling for login modal */
+display: flex;
+width: 10vh 5vw;
+cursor: pointer;
+background-color: rgb(0,0,0);
+border: 1px solid;
+color: white;
+border-radius: 25px;
+font-family:courier ;
+top: 20px;
+left: 10px;
+padding-left: 10px;
+font-size: 2vh;
+font-weight: bold;
+}
+  
+.username_password_footer {
+/* Styling for login modal footer */
+padding: 1%;
+font-size: 2vh;
+background-color: black;
+color: white;
+border-radius: 10px;
+height: auto;
+width: auto;
+}
+
+.username_password_footer a{
+text-decoration: none;
+color: white;
+
+}
+
+.hidden {
+/* Styling for login modal */
+display: none;
+}
+
+.Label p{
+/* Styling for login modal */
+margin: 10px;
+font-size: 2.5vh;
+}
+
+input[type="username"] {
+/* Styling for login modal */
+padding: 10px;
+border-radius: 25px;
+width:20vw;
+background-color: black;
+color: white;
+font-family:courier ;
+}
+
+input[type="password"] {
+/* Styling for login modal */
+padding: 10px;
+border-radius: 25px;
+width: 20vw;
+background-color: black;
+color: white;
+font-family:courier ;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+/* Search Bar Styling */
+.flex_search_bar_container {
+/* Styling for the search bar container */
+display: flex;
+justify-content: center;
+background-color: rgb(4,4,4);
+padding: 10px 10px;
+margin: 10px 0 10px 0 ;
+
+}
+
+.search_bar {
+/* Styling for the search bar */
+display: flex;
+align-items: left;
+border: 2px solid #ccc;
+border-radius: 25px;
+padding: 5px;
+background-color: #fff;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+width: 60vw;
+font-family: courier;
+}
+
+input[type="text"] {
+/* Styling for the search bar */
+border: none;
+outline: none;
+padding: 10px;
+border-radius: 25px;
+font-family: courier;
+width: 100vh;
+flex-grow: 1;
+}
+
+.search_button {
+/* Styling for the search bar */
+background-color: darkgrey;
+color: black;
+border: none;
+border-radius: 25px;
+font-size: 75%;
+width: 10vw;
+cursor: pointer;
+font-family: courier;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+/* FAQs Styling */
+.wrapper {
+  max-width: 75%;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper > p, 
+.wrapper > h1 {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.wrapper > h1 {
+  letter-spacing: 3px;
+}
+
+.according {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 2rem 2.5rem;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.according i {
+  font-size: 1.6rem;
+}
+
+.active, .according:hover {
+  background-color: #f1f7f5;
+}
+
+.panel {
+  padding: 0 2rem 2.5rem 2rem;
+  background-color: white;
+  overflow: hidden;
+  background-color: #f1f7f5;
+  display: none;
+}
+
+.panel p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.faq {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
+}
+
+.faq.active {
+  border: none;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+/* Footer Styling */
+.Home_page_footer{
+/* Styling for the footer */
+display: flex;
+width: auto;
+height: 100%;
+min-height: 300px;
+min-width: 600px;
+padding: 10px;
+margin: 10px;
+background-color: black;
+color: white;
+font-family:courier ;  
+}
+
+.Footer_lists{
+/* Styling for the footers */
+display: flex;
+height: 40vh;
+min-height: 300px;
+width: 100vw;
+min-width: 550px;
+background-color: black;
+color: white;
+font-family:courier ;  
+}
+
+li{
+/* Styling for the footer */
+color:white;
+text-decoration: none;
+}
+
+.Footer_Links{
+color: white;
+padding: 1%;
+font-size: 2vh;
+text-decoration: none;
+
+}
+
+ul{
+/* Styling for the footer  */
+list-style-type: none;
+margin-right: 1 vw;
+margin-left: 1 vw;
+
+}
+
+.Social_media_logos{
+/* Styling for the social media icons */
+display: flex;
+height: auto;
+width: 10%;
+padding: 10px;
+margin: 10px;
+background-color: black;
+color: white;
+font-size: 60px;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.fa {
+/* Styling for the social media icons */
+padding-top: 10px;
+width: 75px;
+height: 75px;
+text-align: center;
+text-decoration: none;
+}
+
+.fa-facebook {
+/* Styling for the social media icons */
+background:white ;
+color: black;
+}
+
+.fa-twitter {
+/* Styling for the social media icons */
+background: white;
+color: black;
+}
+
+.fa-instagram {
+/* Styling for the social media icons */
+background: white;
+color: black;
+}
+
+.Review_container{
+/* Styling for the footer  */
+display: flex;
+height: 100%;
+width: 50vw;
+padding: 10px 10px 10px 10px;
+margin: 10px;
+background-color: black;
+color: white;
+font-family:courier ;
+justify-content: center;
+}
+
+.Review_img{
+/* Styling for the footer */
+width: 35vw;
+height:40vh;
+}
+  
+/*//////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 1500px) {
+.Review_container {
+display: none;
+  }
+  
+.Social_media_logos {
+display: none;
+}
+}
+
+@media only screen and (max-width: 1100px) {
+.Slide_Image{
+width: 30vw;
+height: 100%;
+}
+}
+
+@media only screen and (max-width: 700px) {
+.section_middle_container_text{
+display: none;
+}
+}
+
+
+@media only screen and (max-width: 900px) {
+.login_modal_content_container{
+width:50%;
+}
+}
+
+/* Extra small devices (phones) */
+@media only screen and (max-width: 600px) {
+  /* Styles for phones go here */
+  .card-outline {
+      flex: 0 0 100%;
+  }
+}
+  
+/* Small devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  /* Styles for tablets go here */
+  .card-outline {
+      flex: 0 0 50%;
+  }
+}
+  
+/* Medium devices (laptops) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for laptops go here */
+  .card-outline {
+      flex: 0 0 33.333%;
+  }
+}
+  
+/* Large devices (desktops) */
+@media only screen and (min-width: 1025px) {
+  /* Styles for desktops go here */
+  .card-outline {
+      flex: 0 0 25%;
+  }
+}
+  
+/* Extra large devices (large desktops or wide screens) */
+@media only screen and (min-width: 1200px) {
+  /* Styles for large desktops go here */
+  .card-outline {
+      flex: 0 0 20%;
+  }
+}
