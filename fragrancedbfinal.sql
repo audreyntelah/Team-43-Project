@@ -26,6 +26,7 @@ CREATE TABLE `basket` (
   `sessionID` int(11) NOT NULL,
   `productID` int(11) NOT NULL,
   `quantity` int(11) NOT NULL,
+  `customisation` TEXT NOT NULL,
   PRIMARY KEY (`basketID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
